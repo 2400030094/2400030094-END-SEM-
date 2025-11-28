@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <h1>UniDash</h1>
+        <button id="closeSidebar" class="icon-btn close-btn" aria-label="Close sidebar">✕</button>
+      </div>
+      <nav class="nav">
+        <a class="nav-item active" href="#">Dashboard</a>
+        <a class="nav-item" href="#">Courses</a>
+        <a class="nav-item" href="#">Marks</a>
+        <a class="nav-item" href="#">Schedule</a>
+        <a class="nav-item" href="#">Profile</a>
+        <a class="nav-item" href="#">Settings</a>
+      </nav>
+      <div class="sidebar-footer">
+        <small>Logged in as <strong>Student</strong></small>
+      </div>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <button id="openSidebar" class="icon-btn menu-btn" aria-label="Open sidebar">☰</button>
+        <div class="search">
+          <input type="search" placeholder="Search courses, marks..." aria-label="Search" />
+        </div>
+        <div class="topbar-actions">
+          <button class="icon-btn" aria-label="Notifications">🔔</button>
+          <button class="icon-btn" aria-label="Profile">👤</button>
+        </div>
+      </header>
+
+      <main class="content">
+        <section class="quick-stats">
+          <div class="stat-card">
+            <h3>GPA</h3>
+            <p class="stat-value">3.8</p>
+            <small>Current semester</small>
+          </div>
+          <div class="stat-card">
+            <h3>Courses</h3>
+            <p class="stat-value">6</p>
+            <small>Enrolled</small>
+          </div>
+          <div class="stat-card">
+            <h3>Notifications</h3>
+            <p class="stat-value">3</p>
+            <small>Unread</small>
+          </div>
+          <div class="stat-card">
+            <h3>Assignments</h3>
+            <p class="stat-value">2</p>
+            <small>Due soon</small>
+          </div>
+        </section>
+
+        <section class="notifications">
+          <div class="section-header">
+            <h2>Notifications</h2>
+            <a href="#" class="link">Mark all read</a>
+          </div>
+          <ul class="notif-list">
+            <li class="notif">
+              <div class="notif-main">
+                <strong>Assignment graded</strong>
+                <span class="time">2h ago</span>
+              </div>
+              <p class="muted">Your Submission for "Calculus I" has been graded: 92%</p>
+            </li>
+            <li class="notif">
+              <div class="notif-main">
+                <strong>New Course Material</strong>
+                <span class="time">1d ago</span>
+              </div>
+              <p class="muted">Lecture slides for "Modern Literature" uploaded.</p>
+            </li>
+            <li class="notif">
+              <div class="notif-main">
+                <strong>Exam Schedule</strong>
+                <span class="time">3d ago</span>
+              </div>
+              <p class="muted">Final exams will start from Dec 10. Check timetable.</p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="recent-activities">
+          <div class="section-header">
+            <h2>Recent Activities</h2>
+            <a href="#" class="link">View all</a>
+          </div>
+
+          <div class="activities-grid">
+            <article class="activity-card">
+              <h3>Calculus I</h3>
+              <p class="muted">Quiz 4 — Score: 92%</p>
+              <time>Nov 20, 2025</time>
+            </article>
+            <article class="activity-card">
+              <h3>Modern Literature</h3>
+              <p class="muted">New slides uploaded</p>
+              <time>Nov 18, 2025</time>
+            </article>
+            <article class="activity-card">
+              <h3>Physics Lab</h3>
+              <p class="muted">Report feedback available</p>
+              <time>Nov 15, 2025</time>
+            </article>
+          </div>
+        </section>
+
+      </main>
+
+      <footer class="footer">
+        <small>© 2025 University Dashboard</small>
+      </footer>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
